@@ -1,0 +1,22 @@
+<?php
+
+mysqli_query($koneksi, "insert into peminjaman set
+                                nis = '$_POST[nis]',
+                                kode_buku = '$_POST[kode_buku]',
+                                username = '$_POST[username]',
+                                judul_buku = '$_POST[judul_buku]',
+                                penulis = '$_POST[penulis]',   
+                                halaman = '$_POST[halaman]',
+                                tanggal_peminjaman = '$_POST[tanggal_peminjaman]',
+                                tanggal_pengembalian = '$_POST[tanggal_pengembalian]',
+                                stok = '$_POST[stok]'");
+
+                                if($_POST['proses']) {
+                                    echo "<script>alert('Berhasil Meminjam buku'); window.location.href='perpustakaan.php?halaman=peminjaman';</script>";
+                                } else {
+                                    echo "<script>alert('Gagal meminjam!');</script>";
+                                }
+
+                            } else { }
+
+                            ?>

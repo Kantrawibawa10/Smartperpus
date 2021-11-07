@@ -1,0 +1,47 @@
+.table{
+    padding: 0 150px 0 150px;
+    
+}
+
+.data{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.data thead tr{
+    background-color: rgb(9, 60, 95);
+    color: #ffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.data th,
+.data td{
+    padding: 12px 15px;
+}
+
+.data tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.data tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.data tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(9, 60, 95);
+}
+
+.data tbody tr.active-row{
+    font-weight: bold;
+    color: rgb(9, 60, 95);
+}
+
+.data_buku{
+    width: 50px;
+}
